@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="./Store_files/webstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>S$tore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="cart.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                
+            </ul>
+        </nav>
+        <div class="me-contant">
+        <a style="display: none;" class="menu" href="website.html">menu</a>
+
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="cart.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+              
+            </ul>   
+
+        </div>
+    </header>  
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Store!</h2>
+            <p>Your one-stop shop for the best products.</p>
+        </div>
+    </section>
+ 
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./Store_files/s-l960.webp" alt="Product 1">
+                <h3>Charger</h3>
+                <p>$29.99</p>
+                <a href="charger.html" class="btn">View Details</a>
+                
+            </div>
+            <div class="product-card">
+                <img src="./Store_files/s-l1600.webp" alt="Product 2">
+                <h3>Airpods</h3>
+                <p>$349.99</p>
+                <a href="airpods.html" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="./Store_files/airtag-single-select-202104.jpeg" alt="Product 3">
+                <h3>Airtags</h3>
+                <p>$29.99</p>
+                <a href="airtag.html" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="./Store_files/s-l960 (1).webp" alt="Product 4">
+                <h3>magsafe power </h3>
+                <p>$49.99</p>
+                <a href="magsafe.html" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="./Store_files/apple_mgyj3am_a_airpods_max_silver_1610234.webp" alt="Product 5">
+                <h3>Headsets</h3>
+                <p>$399.99</p>
+                <a href="headsets.html" class="btn">View Details</a>
+            </div>
+            <div class="product-card">
+                <img src="./Store_files/watch.png" alt="Product 5">
+                <h3>Apple Watch</h3>
+                <p>$499.99</p>
+                <a href="watch.html" class="btn">View Details</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>We are a mobile accessory store offering high-quality products such as airpods, chargers, airtags,and screen protectors to enhance and protect your devices. We are committed to providing excellent customer service and top-notch products.</p>
+            </div>
+            
+            <div class="footer-search">
+                <form action="search" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 My Store. All rights reserved.</p>
+        </div>
+    </footer>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
